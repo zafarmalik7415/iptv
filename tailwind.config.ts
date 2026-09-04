@@ -9,8 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: {
+          1: "#ffb020", // amber
+          2: "#ff7a45", // orange
+          3: "#ff3d81", // rose
+          accent: "#2dd4bf", // teal — checks, links, contrast pops
+        },
+      },
+      keyframes: {
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(12px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        "fade-up": "fade-up 0.5s ease-out both",
+        marquee: "marquee 32s linear infinite",
       },
     },
   },
