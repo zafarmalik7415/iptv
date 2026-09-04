@@ -39,8 +39,8 @@ export default function FaqPage() {
             eyebrow="Help centre"
             title={
               <>
-                Everything about your{" "}
-                <span className="gradient-text">IPTV subscription</span>
+                Everything About Your{" "}
+                <span className="gradient-text">IPTV Subscription</span>
               </>
             }
             description="The questions we get asked most, before and after signing up. Cannot see yours? Support usually replies within minutes."
@@ -58,7 +58,7 @@ export default function FaqPage() {
 
       <section className="border-t border-white/10 bg-white/[0.02] py-16 sm:py-20">
         <Container>
-          <SectionHeading eyebrow="Setup" title="Getting started, in short" />
+          <SectionHeading eyebrow="Setup" title="Getting Started, In Short" />
           <ol className="mx-auto mt-12 grid max-w-4xl gap-4 md:grid-cols-4">
             {steps.map((step, index) => (
               <li key={step.title} className="card p-5">
@@ -79,8 +79,8 @@ export default function FaqPage() {
         eyebrow="Still have a question?"
         title={
           <>
-            Ask us before you{" "}
-            <span className="gradient-text">buy</span>
+            Ask Us Before You{" "}
+            <span className="gradient-text">Buy</span>
           </>
         }
         description="Message us on WhatsApp with your device and what you want to watch, and we will tell you which plan fits."

@@ -23,17 +23,17 @@ export const metadata = buildMetadata({
 const setupBasics = [
   {
     icon: "mail" as const,
-    title: "Your activation email",
+    title: "Your Activation Email",
     text: "After checkout we email your login. That is an Xtream Codes username, password and server URL, plus an M3U link. Keep it to hand.",
   },
   {
     icon: "download" as const,
-    title: "A player app",
+    title: "A Player App",
     text: "IPTV Smarters Pro or TiviMate on most devices. Smart IPTV or IBO Player on Samsung and LG TVs.",
   },
   {
     icon: "bolt" as const,
-    title: "A steady connection",
+    title: "A Steady Connection",
     text: "About 15 Mbps per stream for Full HD and 25 Mbps or more for 4K. Wired or 5 GHz WiFi is best for live sport.",
   },
 ];
@@ -57,8 +57,8 @@ export default function InstallationGuidePage() {
             eyebrow="Setup guide"
             title={
               <>
-                Get your <span className="gradient-text">IPTV subscription</span>{" "}
-                running in minutes
+                Get Your <span className="gradient-text">IPTV Subscription</span>{" "}
+                Running In Minutes
               </>
             }
             description="Choose your device below and follow the steps. Most setups take under 6 minutes and only need doing once. Stuck at any point? Live chat support will finish it with you."
@@ -89,7 +89,7 @@ export default function InstallationGuidePage() {
       <section className="border-t border-white/10 bg-white/[0.02] py-16 sm:py-20">
         <Container>
           <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
-            <h2 className="text-2xl font-bold">Still not working?</h2>
+            <h2 className="text-2xl font-bold">Still Not Working?</h2>
             <p className="text-sm leading-relaxed text-white/55">
               Tell us the device you are using and where you got stuck. Our team
               sets up IPTV every day and will get you watching, usually within a

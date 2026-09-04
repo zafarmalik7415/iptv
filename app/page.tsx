@@ -68,8 +68,8 @@ export default function HomePage() {
                 UK servers · Steady in peak hours · HD, FHD and 4K
               </span>
               <h1 className="mt-6 text-3xl font-bold leading-tight text-balance md:text-5xl lg:text-[3.3rem]">
-                A <span className="gradient-text">UK IPTV subscription</span>{" "}
-                built for steady live TV
+                A <span className="gradient-text">UK IPTV Subscription</span>{" "}
+                Built For Steady Live TV
               </h1>
               <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/65 lg:mx-0">
                 Our IPTV subscription runs on UK based servers, so the picture
@@ -136,8 +136,8 @@ export default function HomePage() {
             eyebrow="UK streaming servers"
             title={
               <>
-                Closer servers mean a{" "}
-                <span className="gradient-text">steadier picture</span>
+                Closer Servers Mean A{" "}
+                <span className="gradient-text">Steadier Picture</span>
               </>
             }
           />
@@ -159,11 +159,14 @@ export default function HomePage() {
           </div>
 
           <h3 className="mt-14 text-center text-2xl font-bold text-balance md:text-3xl">
-            Why UK viewers stay with us
+            Why UK Viewers Stay With Us
           </h3>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {trustFeatures.map((f) => (
-              <div key={f.title} className="card p-6">
+              <div
+                key={f.title}
+                className="card p-6 transition-colors hover:border-white/20"
+              >
                 <IconBadge name={f.icon} />
                 <h3 className="mt-4 text-lg font-bold">{f.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/60">
@@ -190,18 +193,18 @@ export default function HomePage() {
             description="Pay once per term. No contract and no hidden fees. Every plan includes all 20,000+ channels, every device and 24/7 support."
           />
 
-          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid items-start gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {durationPlans.map((plan) => (
               <div
                 key={plan.id}
-                className={`card relative flex flex-col p-6 ${
+                className={`card relative flex flex-col p-6 transition-transform duration-200 hover:-translate-y-1 ${
                   plan.featured
-                    ? "border-brand-2/60 bg-gradient-to-b from-brand-2/[0.14] to-brand-3/[0.06]"
+                    ? "border-brand-2/60 bg-gradient-to-b from-brand-2/[0.16] to-brand-3/[0.06] shadow-xl shadow-brand-3/10 lg:-translate-y-2 lg:hover:-translate-y-3"
                     : ""
                 }`}
               >
                 {plan.badge ? (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-brand-1 to-brand-3 px-3 py-1 text-[11px] font-semibold text-[#1a0f07]">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-brand-1 to-brand-3 px-3 py-1 text-[11px] font-semibold text-[#1a0f07] shadow-lg shadow-brand-3/30">
                     {plan.badge}
                   </span>
                 ) : null}
@@ -262,7 +265,7 @@ export default function HomePage() {
             eyebrow="Channels · Sport · Films · Series"
             title={
               <>
-                Everything in <span className="gradient-text">one place</span>
+                Everything In <span className="gradient-text">One Place</span>
               </>
             }
             description="Nobody watches 20,000 channels, so we help you set up the ones you actually use. Need a channel from another country? Ask and we will add it at no extra cost."
@@ -270,7 +273,10 @@ export default function HomePage() {
 
           <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {contentPillars.map((p) => (
-              <div key={p.title} className="card p-6">
+              <div
+                key={p.title}
+                className="card p-6 transition-colors hover:border-white/20"
+              >
                 <IconBadge name={p.icon} />
                 <h3 className="mt-4 text-lg font-bold">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/60">
@@ -309,7 +315,7 @@ export default function HomePage() {
             eyebrow="On demand"
             title={
               <>
-                Something for <span className="gradient-text">every taste</span>
+                Something For <span className="gradient-text">Every Taste</span>
               </>
             }
             description="Every IPTV subscription comes with a large on demand library. New releases, box sets and full TV series, with fresh titles added every week."
@@ -326,7 +332,7 @@ export default function HomePage() {
             eyebrow="Device compatibility"
             title={
               <>
-                Works on <span className="gradient-text">your devices</span>
+                Works On <span className="gradient-text">Your Devices</span>
               </>
             }
             description="Your IPTV subscription works across the devices you own, from the Firestick and Smart TV to Android TV, iPhone, iPad, Windows and Mac. Our team will help you set it up if you need a hand."
@@ -360,7 +366,7 @@ export default function HomePage() {
             eyebrow="An honest comparison"
             title={
               <>
-                How we <span className="gradient-text">compare</span>
+                How We <span className="gradient-text">Compare</span>
               </>
             }
             description="Where the real difference comes from, which is servers, speed and stability."
@@ -370,7 +376,7 @@ export default function HomePage() {
             {/* us */}
             <div className="card border-brand-2/50 bg-brand-2/[0.06] p-6">
               <div className="flex items-baseline justify-between">
-                <h3 className="text-base font-bold">Our IPTV service</h3>
+                <h3 className="text-base font-bold">Our IPTV Service</h3>
                 <span className="text-xs font-semibold text-brand-accent">
                   Local servers
                 </span>
@@ -397,7 +403,7 @@ export default function HomePage() {
             <div className="card p-6">
               <div className="flex items-baseline justify-between">
                 <h3 className="text-base font-bold text-white/70">
-                  Other providers
+                  Other Providers
                 </h3>
                 <span className="text-xs font-semibold text-white/35">
                   Overseas servers
@@ -423,7 +429,7 @@ export default function HomePage() {
           </div>
 
           <div className="card mt-6 p-6">
-            <h3 className="text-base font-bold">Why this matters</h3>
+            <h3 className="text-base font-bold">Why This Matters</h3>
             <p className="mt-2 text-sm leading-relaxed text-white/60">
               A lot of providers keep costs down with cheap overseas servers,
               which adds latency to every stream for UK viewers. We run UK
@@ -447,15 +453,18 @@ export default function HomePage() {
             eyebrow="Get started in minutes"
             title={
               <>
-                How to start your{" "}
-                <span className="gradient-text">IPTV subscription</span>
+                How To Start Your{" "}
+                <span className="gradient-text">IPTV Subscription</span>
               </>
             }
             description="Four short steps from choosing a plan to watching live TV, usually done in under ten minutes."
           />
           <ol className="mx-auto mt-14 grid max-w-5xl gap-4 md:grid-cols-4">
             {steps.map((step, index) => (
-              <li key={step.title} className="card p-6">
+              <li
+                key={step.title}
+                className="card p-6 transition-colors hover:border-white/20"
+              >
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-sm font-bold text-brand-3">
                   {index + 1}
                 </span>
@@ -482,7 +491,7 @@ export default function HomePage() {
             eyebrow="What customers say"
             title={
               <>
-                What <span className="gradient-text">customers say</span>
+                What <span className="gradient-text">Customers Say</span>
               </>
             }
           />
@@ -530,8 +539,8 @@ export default function HomePage() {
         eyebrow="Join them"
         title={
           <>
-            Watch tonight on a{" "}
-            <span className="gradient-text">UK IPTV subscription</span>
+            Watch Tonight On A{" "}
+            <span className="gradient-text">UK IPTV Subscription</span>
           </>
         }
         description="Set up takes a few minutes and support is on hand if you get stuck."
@@ -544,7 +553,7 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             eyebrow="Questions answered"
-            title="Questions, answered"
+            title="Questions, Answered"
             description={
               <>
                 The things people ask most before they start. Still unsure?{" "}
@@ -569,8 +578,8 @@ export default function HomePage() {
             eyebrow="The difference"
             title={
               <>
-                What makes us{" "}
-                <span className="gradient-text">different</span>
+                What Makes Us{" "}
+                <span className="gradient-text">Different</span>
               </>
             }
           />
@@ -583,7 +592,10 @@ export default function HomePage() {
 
           <div className="mt-12 grid gap-4 md:grid-cols-2">
             {differencePoints.map((d) => (
-              <div key={d.heading} className="card p-6">
+              <div
+                key={d.heading}
+                className="card p-6 transition-colors hover:border-white/20"
+              >
                 <h3 className="text-lg font-bold">{d.heading}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/60">
                   {d.body}
@@ -607,8 +619,8 @@ export default function HomePage() {
       <CtaSection
         title={
           <>
-            Ready to start your{" "}
-            <span className="gradient-text">IPTV subscription?</span>
+            Ready To Start Your{" "}
+            <span className="gradient-text">IPTV Subscription?</span>
           </>
         }
         description="Get 20,000+ live channels, a large VOD library and UK based servers, with a 7 day money back guarantee behind it. Pick your plan and you can be watching today. Not sure yet? Message us on WhatsApp first."

@@ -77,7 +77,7 @@ export function InstallationGuide() {
           </div>
 
           <h2 className="mt-4 text-xl font-bold sm:text-2xl">
-            Set up on {guide.device}
+            Set Up On {guide.device}
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-white/60">
             {guide.intro}
@@ -108,7 +108,7 @@ export function InstallationGuide() {
           <div className="mt-7 rounded-xl border border-white/10 bg-white/[0.02] p-4">
             <p className="flex items-center gap-2 text-[13px] font-semibold text-white/80">
               <Icon name="wrench" className="h-4 w-4 text-brand-2" />
-              Tips &amp; troubleshooting
+              Tips &amp; Troubleshooting
             </p>
             <ul className="mt-3 space-y-2">
               {guide.tips.map((tip) => (

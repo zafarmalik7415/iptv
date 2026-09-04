@@ -27,17 +27,17 @@ export const metadata = buildMetadata({
 const guarantees = [
   {
     icon: "bolt" as const,
-    title: "Instant activation",
+    title: "Instant Activation",
     text: "Your login is emailed within minutes of payment.",
   },
   {
     icon: "shield" as const,
-    title: "7 day money back",
+    title: "7 Day Money Back",
     text: "A full refund if the service will not work on your setup.",
   },
   {
     icon: "calendar" as const,
-    title: "No contract",
+    title: "No Contract",
     text: "Renew, change plan or stop whenever you like.",
   },
 ];
@@ -62,8 +62,8 @@ export default function PricingPage() {
             eyebrow="Pricing"
             title={
               <>
-                Simple plans for your{" "}
-                <span className="gradient-text">IPTV subscription</span>
+                Simple Plans For Your{" "}
+                <span className="gradient-text">IPTV Subscription</span>
               </>
             }
             description="Every plan includes the full 20,000+ channel list, the VOD library and a 7 day TV guide with catch up. You choose how many screens and how long."
@@ -100,7 +100,7 @@ export default function PricingPage() {
           <SectionHeading
             align="left"
             eyebrow="Billing FAQ"
-            title="Questions about paying for your subscription"
+            title="Questions About Paying For Your Subscription"
           />
           <div className="mt-10 divide-y divide-white/10">
             {faqs.slice(0, 4).map((faq) => (
@@ -131,8 +131,8 @@ export default function PricingPage() {
         eyebrow="Pick a plan"
         title={
           <>
-            Start your{" "}
-            <span className="gradient-text">IPTV subscription</span> today
+            Start Your{" "}
+            <span className="gradient-text">IPTV Subscription</span> Today
           </>
         }
         description="Choose a plan and your login arrives by email within minutes. Prefer to ask first? We are on WhatsApp."

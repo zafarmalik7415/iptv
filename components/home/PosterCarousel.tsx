@@ -6,7 +6,8 @@ import { OptimizedImage } from "@/components/OptimizedImage";
 import { Icon } from "@/components/ui";
 import { onDemandTitles } from "@/lib/content";
 
-const TMDB_IMG = "https://image.tmdb.org/t/p/w342";
+// w185 is plenty for a 150-168px wide card and roughly half the bytes of w342.
+const TMDB_IMG = "https://image.tmdb.org/t/p/w185";
 
 export function PosterCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -44,9 +45,9 @@ export function PosterCarousel() {
     <div className="relative">
       <div className="mt-8 flex items-end justify-between">
         <p className="text-sm font-semibold text-white/80">
-          Trending in the library this week
+          Trending In The Library This Week
         </p>
-        <p className="hidden text-xs text-white/40 sm:block">Updated weekly</p>
+        <p className="hidden text-xs text-white/40 sm:block">Updated Weekly</p>
       </div>
 
       <div className="group relative mt-4">

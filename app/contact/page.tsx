@@ -24,7 +24,7 @@ const channels = [
   },
   {
     icon: "chat" as const,
-    title: "Live chat",
+    title: "Live Chat",
     value: contact.chatHours,
     detail: contact.responseTime,
   },
@@ -57,7 +57,7 @@ export default function ContactPage() {
         <Container className="relative py-16 sm:py-24">
           <SectionHeading
             eyebrow="Contact"
-            title="Talk to a real person before you buy"
+            title="Talk To A Real Person Before You Buy"
             description="Ask anything about the IPTV subscription. Which plan fits your setup, whether a channel is included, or how to install it on your device."
           />
         </Container>

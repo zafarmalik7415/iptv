@@ -25,37 +25,37 @@ export const features: {
 }[] = [
   {
     icon: "bolt",
-    title: "Smooth playback in peak hours",
+    title: "Smooth Playback In Peak Hours",
     description:
       "Load balanced UK servers and adaptive bitrate keep the picture stable in HD and 4K, including Saturday afternoon football and big fight nights.",
   },
   {
     icon: "devices",
-    title: "Works on the devices you already have",
+    title: "Works On The Devices You Already Have",
     description:
       "One IPTV subscription covers Smart TV, Amazon Firestick, Android, iPhone, iPad, Apple TV, MAG boxes and computers.",
   },
   {
     icon: "grid",
-    title: "20,000+ channels and a full VOD library",
+    title: "20,000+ Channels And A Full VOD Library",
     description:
       "Live UK and international sport, films, series, news and kids channels, plus an on demand library that is refreshed every week.",
   },
   {
     icon: "calendar",
-    title: "7 day guide with catch up",
+    title: "7 Day Guide With Catch Up",
     description:
       "A full electronic programme guide with catch up and recording in supported apps, so a missed match is easy to pick up later.",
   },
   {
     icon: "globe",
-    title: "UK line up plus the rest of the world",
+    title: "UK Line Up Plus The Rest Of The World",
     description:
       "Full UK channels alongside Ireland, Europe, the USA, Canada, the Middle East, Asia and Africa, all in one tidy list.",
   },
   {
     icon: "shield",
-    title: "Private by default",
+    title: "Private By Default",
     description:
       "Encrypted delivery, no record kept of what you watch, and your login sent straight to your inbox after payment.",
   },
@@ -65,22 +65,22 @@ export const features: {
 
 export const steps: { title: string; description: string }[] = [
   {
-    title: "Choose your plan",
+    title: "Choose Your Plan",
     description:
       "Pick the IPTV subscription that fits your household. Longer terms work out cheaper per month.",
   },
   {
-    title: "Fill in the short form",
+    title: "Fill In The Short Form",
     description:
       "Add your details at checkout. It takes about a minute and there is no long sign up.",
   },
   {
-    title: "Get your secure payment link",
+    title: "Get Your Secure Payment Link",
     description:
       "We email you a private payment link so you can pay safely by card.",
   },
   {
-    title: "Pay and start watching",
+    title: "Pay And Start Watching",
     description:
       "Your login and setup steps arrive by email within a few minutes of payment.",
   },
@@ -95,25 +95,25 @@ export const trustFeatures: {
 }[] = [
   {
     icon: "shield",
-    title: "UK based servers",
+    title: "UK Based Servers",
     description:
       "Our streaming servers sit in the UK, so the distance your data travels is short. That means low latency and fewer drop outs, including at 8pm on a weeknight.",
   },
   {
     icon: "grid",
-    title: "20,000+ channels",
+    title: "20,000+ Channels",
     description:
       "A large line up of live UK and world sport, entertainment, news and international channels, with quick switching between them.",
   },
   {
     icon: "sparkles",
-    title: "HD and 4K streams",
+    title: "HD And 4K Streams",
     description:
       "4K, Full HD and HD feeds with enough bandwidth behind them to hold picture quality when a lot of people are watching.",
   },
   {
     icon: "devices",
-    title: "Every screen in the house",
+    title: "Every Screen In The House",
     description:
       "Firestick, Smart TV, Android, iPhone, iPad, Windows and Mac. One subscription covers the lot.",
   },
@@ -128,25 +128,25 @@ export const contentPillars: {
 }[] = [
   {
     icon: "globe",
-    title: "20,000+ live channels",
+    title: "20,000+ Live Channels",
     description:
       "Full UK channels plus Ireland, Europe, the USA, Canada and more than 100 other countries. Entertainment, news, kids and documentaries in one place.",
   },
   {
     icon: "trophy",
-    title: "Live sport and event nights",
+    title: "Live Sport And Event Nights",
     description:
       "Premier League, EFL, Champions League, F1, cricket, rugby, UFC, boxing, NFL and NBA, plus the dedicated channels we open for big pay per view events.",
   },
   {
     icon: "film",
-    title: "Films and box sets on demand",
+    title: "Films And Box Sets On Demand",
     description:
       "A large on demand library that grows every week with new releases and complete series you can watch from the start.",
   },
   {
     icon: "tv",
-    title: "HD, Full HD and 4K",
+    title: "HD, Full HD And 4K",
     description:
       "A clean picture on every feed, with anti freeze handling that keeps playback steady during busy periods.",
   },
@@ -257,7 +257,7 @@ export const installGuides: InstallGuide[] = [
       "The Fire TV app store doesn't list IPTV players, so you sideload one with the free Downloader app. You only do this once.",
     steps: [
       {
-        title: "Allow app installs",
+        title: "Allow App Installs",
         detail:
           "From the Fire TV home screen open Settings → My Fire TV → Developer options and turn on “Install unknown apps” for Downloader. On newer sticks you may first need to open About and click the model name 7 times to reveal Developer options.",
       },
@@ -272,12 +272,12 @@ export const installGuides: InstallGuide[] = [
           "Open Downloader, type the address in the Browse box that our email gives you for the Smarters APK, press Go, then choose Install and Done. Delete the APK file when prompted to save space.",
       },
       {
-        title: "Enter your login",
+        title: "Enter Your Login",
         detail:
           "Open IPTV Smarters Pro, choose “Login with Xtream Codes API”, and type any name plus the username, password and server URL from your activation email. Add the M3U URL instead if that's what you were sent.",
       },
       {
-        title: "Let the channels load",
+        title: "Let The Channels Load",
         detail:
           "The app downloads the channel list and 7 day guide. First load can take a minute or two. After that it opens straight to Live TV.",
       },
@@ -300,22 +300,22 @@ export const installGuides: InstallGuide[] = [
       "Android powered TVs, Nvidia Shield, Chromecast with Google TV and most Android boxes install the player straight from Google Play.",
     steps: [
       {
-        title: "Install the player",
+        title: "Install The Player",
         detail:
           "Open the Play Store on your TV, search for “TiviMate” or “IPTV Smarters Pro” and install it. TiviMate has the nicer guide; Smarters is simpler to set up.",
       },
       {
-        title: "Add your playlist",
+        title: "Add Your Playlist",
         detail:
           "In TiviMate choose Add playlist → Xtream Codes and enter the username, password and server URL from your email. In Smarters choose “Login with Xtream Codes API” and do the same.",
       },
       {
-        title: "Name the playlist",
+        title: "Name The Playlist",
         detail:
           "Give it any name (e.g. “Main”). The app fetches your channels, groups and EPG automatically.",
       },
       {
-        title: "Pick your EPG (TiviMate)",
+        title: "Pick Your EPG (TiviMate)",
         detail:
           "TiviMate usually loads the guide from the Xtream login. If not, add the EPG URL from your email under Settings → EPG → EPG sources.",
       },
@@ -341,12 +341,12 @@ export const installGuides: InstallGuide[] = [
         detail: "Open the Play Store, search “IPTV Smarters Pro” and install it.",
       },
       {
-        title: "Log in with Xtream Codes",
+        title: "Log In With Xtream Codes",
         detail:
           "Open the app, tap “Login with Xtream Codes API”, enter any name plus the username, password and server URL from your activation email.",
       },
       {
-        title: "Start watching",
+        title: "Start Watching",
         detail:
           "Tap Live TV, Movies or Series. Use the heart icon to add favourites and the search box to jump to a channel.",
       },
@@ -368,17 +368,17 @@ export const installGuides: InstallGuide[] = [
       "Apple devices install the player straight from the App Store. The tvOS version on Apple TV works identically.",
     steps: [
       {
-        title: "Install the app",
+        title: "Install The App",
         detail:
           "On the App Store search for “IPTV Smarters Player” (or “Smarters Player Lite” on Apple TV) and install it.",
       },
       {
-        title: "Add your account",
+        title: "Add Your Account",
         detail:
           "Open the app and choose “Login with Xtream Codes API”. Enter any name plus the username, password and server URL from your email.",
       },
       {
-        title: "Allow local network (Apple TV)",
+        title: "Allow Local Network (Apple TV)",
         detail:
           "If tvOS asks, allow the app to find devices on your local network so playback and the guide load correctly.",
       },
@@ -403,27 +403,27 @@ export const installGuides: InstallGuide[] = [
       "Samsung (Tizen) TVs use a playlist app plus a web portal. You upload your M3U link once against the TV’s MAC address, then the app just plays it.",
     steps: [
       {
-        title: "Install the app",
+        title: "Install The App",
         detail:
           "On the TV open Samsung Apps, search for “Smart IPTV” (or “IBO Player Pro”) and install it.",
       },
       {
-        title: "Note the MAC address",
+        title: "Note The MAC Address",
         detail:
           "Open the app. It shows a MAC address (00:1A:79:xx:xx:xx or similar) and an upload URL. For Smart IPTV that’s siptv.app/mylist. Note both down.",
       },
       {
-        title: "Upload your playlist",
+        title: "Upload Your Playlist",
         detail:
           "On a phone or PC go to siptv.app/mylist, enter the TV’s MAC address, paste the M3U URL from your activation email, set the country, then click Add.",
       },
       {
-        title: "Reload the app",
+        title: "Reload The App",
         detail:
           "Close the app completely on the TV and reopen it. Your channels and the 7 day guide load automatically.",
       },
       {
-        title: "Activate if prompted",
+        title: "Activate If Prompted",
         detail:
           "After the trial, Smart IPTV asks for a one off activation on siptv.app/activation. This fee goes to the app developer, not to us. IBO Player Pro is an alternative if you’d rather not.",
       },
@@ -445,22 +445,22 @@ export const installGuides: InstallGuide[] = [
       "LG (webOS) TVs work the same way as Samsung: a playlist app plus a single upload of your M3U link against the TV’s MAC address.",
     steps: [
       {
-        title: "Install the app",
+        title: "Install The App",
         detail:
           "Open the LG Content Store, search for “Smart IPTV” (or “IBO Player”) and install it.",
       },
       {
-        title: "Note the MAC address",
+        title: "Note The MAC Address",
         detail:
           "Launch the app and note the MAC address and upload URL it shows (siptv.app/mylist for Smart IPTV).",
       },
       {
-        title: "Upload your playlist",
+        title: "Upload Your Playlist",
         detail:
           "On a phone or PC open siptv.app/mylist, enter the MAC address, paste the M3U URL from your email, set the country, and click Add.",
       },
       {
-        title: "Reload the app",
+        title: "Reload The App",
         detail:
           "Fully close and reopen the app on the TV. Channels and EPG load automatically.",
       },
@@ -482,22 +482,22 @@ export const installGuides: InstallGuide[] = [
       "Watch on a laptop or desktop with the Windows player, or quickly test your line in VLC.",
     steps: [
       {
-        title: "Download the app",
+        title: "Download The App",
         detail:
           "Use the IPTV Smarters Pro for Windows link in your welcome email and run the installer. If SmartScreen warns, click “More info → Run anyway”.",
       },
       {
-        title: "Log in with Xtream Codes",
+        title: "Log In With Xtream Codes",
         detail:
           "Open Smarters, choose “Add New User → Login with Xtream Codes API”, and enter any name plus the username, password and server URL from your email.",
       },
       {
-        title: "Or use VLC to test",
+        title: "Or Use VLC To Test",
         detail:
           "In VLC choose Media → Open Network Stream, paste your M3U URL, then open View → Playlist to browse channels.",
       },
       {
-        title: "Allow it through the firewall",
+        title: "Allow It Through The Firewall",
         detail:
           "If Windows Firewall pops up on first play, tick the box and click Allow access, then double click a channel to start.",
       },
@@ -518,22 +518,22 @@ export const installGuides: InstallGuide[] = [
     intro: "The macOS player sets up in a couple of minutes; VLC works for a quick check of your line.",
     steps: [
       {
-        title: "Install the app",
+        title: "Install The App",
         detail:
           "Open the .dmg from your welcome email and drag IPTV Smarters Pro into the Applications folder.",
       },
       {
-        title: "Open it the first time",
+        title: "Open It The First Time",
         detail:
           "If macOS blocks it, go to System Settings → Privacy & Security, scroll down and click “Open Anyway”, then confirm.",
       },
       {
-        title: "Log in with Xtream Codes",
+        title: "Log In With Xtream Codes",
         detail:
           "Choose “Add New User → Login with Xtream Codes API” and enter any name plus the username, password and server URL from your email.",
       },
       {
-        title: "Or open the M3U in VLC",
+        title: "Or Open The M3U In VLC",
         detail:
           "In VLC use File → Open Network, paste your M3U URL, then open the Playlist window to pick a channel. VLC has no guide.",
       },
@@ -560,17 +560,17 @@ export const installGuides: InstallGuide[] = [
           "From the home screen open MyTVOnline (MOL2 or MOL3), then go to its Playlist / Portal settings and choose Add.",
       },
       {
-        title: "Choose the login type",
+        title: "Choose The Login Type",
         detail:
           "Pick “Xtream Codes API” and enter the server URL, username and password from your email. If you were sent a Stalker portal instead, choose Portal and paste that URL (it ends in /c/).",
       },
       {
-        title: "Name it and save",
+        title: "Name It And Save",
         detail:
           "Give the playlist any name and save. MyTVOnline downloads the channels, groups and EPG.",
       },
       {
-        title: "Prefer another app?",
+        title: "Prefer Another App?",
         detail:
           "You can also install IPTV Smarters Pro or TiviMate from the Formuler app store and use the same Xtream Codes login.",
       },
@@ -592,22 +592,22 @@ export const installGuides: InstallGuide[] = [
       "A MAG box loads channels from a portal URL that is locked to the box’s MAC address. Tell support you use a MAG and give them the MAC so they can issue your portal.",
     steps: [
       {
-        title: "Find your MAC address",
+        title: "Find Your MAC Address",
         detail:
           "On the box open the main menu. The MAC address (00:1A:79:xx:xx:xx) is shown on the system info screen. Send it to support if you haven’t already.",
       },
       {
-        title: "Open portal settings",
+        title: "Open Portal Settings",
         detail:
           "Go to Settings → System settings → Servers → Portals.",
       },
       {
-        title: "Enter the portal URL",
+        title: "Enter The Portal URL",
         detail:
           "In “Portal 1 URL” paste the portal address from your email (it ends in /c/ or /stalker_portal/c/). Give Portal 1 any name and leave Portal 2 blank.",
       },
       {
-        title: "Save and restart the portal",
+        title: "Save And Restart The Portal",
         detail:
           "Save, then go to System settings → Restart Portal (or reboot the box). On startup it loads the channel list and EPG.",
       },
@@ -634,19 +634,19 @@ export const comparisonRows: { label: string; us: string; them: string }[] = [
 
 export const differencePoints: { heading: string; body: string }[] = [
   {
-    heading: "The infrastructure is the point",
+    heading: "The Infrastructure Is The Point",
     body: "Rather than putting every customer on the same busy servers, we run a network that routes you to nearby UK capacity. The difference shows most in peak hours and during big live events, when a lot of other services start to struggle.",
   },
   {
-    heading: "What you see is what you get",
+    heading: "What You See Is What You Get",
     body: "We publish real channel lists and sensible expectations. No invented 30,000 channel counts and no promises we cannot keep. A steady stream matters more than a big number.",
   },
   {
-    heading: "Support is part of the product",
+    heading: "Support Is Part Of The Product",
     body: "If you need a hand setting up a device, tuning playback or sorting an issue, our UK support team stays with you. Plenty of providers go quiet after the sale. We do not.",
   },
   {
-    heading: "Built for people who care how it runs",
+    heading: "Built For People Who Care How It Runs",
     body: "No inflated claims and no gimmicks. Just a UK IPTV subscription built on solid servers, honest information and support that answers.",
   },
 ];
@@ -693,7 +693,7 @@ export const channelCategories: ChannelCategory[] = [
   },
   {
     slug: "movies",
-    name: "Films and Series",
+    name: "Films And Series",
     icon: "film",
     count: "5,000+",
     blurb:
@@ -750,7 +750,7 @@ export const channelCategories: ChannelCategory[] = [
   },
   {
     slug: "ppv-events",
-    name: "PPV and Events",
+    name: "PPV And Events",
     icon: "bolt",
     count: "Live",
     blurb: "Extra channels that we open for the big boxing, UFC and wrestling nights.",
@@ -869,17 +869,17 @@ export interface DurationPlan {
  * WhatsApp, so there is no checkout to wire up.
  */
 export const durationPlans: DurationPlan[] = [
-  { id: "1-month", label: "1 month", months: 1, price: 20 },
-  { id: "3-months", label: "3 months", months: 3, price: 35 },
+  { id: "1-month", label: "1 Month", months: 1, price: 20 },
+  { id: "3-months", label: "3 Months", months: 3, price: 35 },
   {
     id: "6-months",
-    label: "6 months",
+    label: "6 Months",
     months: 6,
     price: 55,
     featured: true,
     badge: "Most popular",
   },
-  { id: "12-months", label: "12 months", months: 12, price: 70 },
+  { id: "12-months", label: "12 Months", months: 12, price: 70 },
 ];
 
 /** Feature list every duration plan includes. */

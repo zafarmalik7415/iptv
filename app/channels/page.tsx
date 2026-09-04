@@ -38,8 +38,8 @@ export default function ChannelsPage() {
             eyebrow="Channel line up"
             title={
               <>
-                20,000+ live channels in your{" "}
-                <span className="gradient-text">IPTV subscription</span>
+                20,000+ Live Channels In Your{" "}
+                <span className="gradient-text">IPTV Subscription</span>
               </>
             }
             description="Filter by category or search for a channel by name. This page shows popular examples. The live line up is much larger and changes all the time."
@@ -56,9 +56,9 @@ export default function ChannelsPage() {
       <section className="border-t border-white/10 bg-white/[0.02] py-16">
         <Container>
           <div className="grid gap-4 sm:grid-cols-3">
-            <Stat label="Channel categories" value={`${totalCount}`} />
-            <Stat label="Sport channels" value="3,400+" />
-            <Stat label="TV guide" value="7 days" />
+            <Stat label="Channel Categories" value={`${totalCount}`} />
+            <Stat label="Sport Channels" value="3,400+" />
+            <Stat label="TV Guide" value="7 Days" />
           </div>
           <div className="mt-10 flex flex-col items-center gap-3 text-center">
             <p className="text-sm text-white/55">
@@ -73,8 +73,8 @@ export default function ChannelsPage() {
         eyebrow="Your channels are waiting"
         title={
           <>
-            Get the full{" "}
-            <span className="gradient-text">line up</span> today
+            Get The Full{" "}
+            <span className="gradient-text">Line Up</span> Today
           </>
         }
         description="One IPTV subscription covers all the sport, films, entertainment and international channels on this page. Ask on WhatsApp if you need a specific channel checked first."
