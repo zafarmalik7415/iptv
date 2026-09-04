@@ -1,9 +1,4 @@
-import {
-  billingOptions,
-  plans,
-  priceForCycle,
-  type Faq,
-} from "@/lib/content";
+import { durationPlans, type Faq } from "@/lib/content";
 import { absoluteUrl } from "@/lib/seo";
 import { SITE_URL, siteConfig } from "@/lib/site";
 
@@ -79,15 +74,12 @@ export function faqPageSchema(items: Faq[]): JsonLdObject {
 
 /**
  * schema.org "Product" for the subscription itself, with an AggregateOffer
- * spanning the cheapest (yearly) to the most expensive (monthly) plan price.
+ * spanning the cheapest to the most expensive per term plan price.
  */
 export function subscriptionProductSchema(): JsonLdObject {
-  const yearly = billingOptions.find((b) => b.key === "yearly")?.discount ?? 0;
-  const monthlyPrices = plans.map((p) => p.monthlyPrice);
-  const lowPrice = Math.min(
-    ...plans.map((p) => priceForCycle(p.monthlyPrice, yearly)),
-  );
-  const highPrice = Math.max(...monthlyPrices);
+  const prices = durationPlans.map((p) => p.price);
+  const lowPrice = Math.min(...prices);
+  const highPrice = Math.max(...prices);
 
   return {
     "@context": "https://schema.org",
@@ -103,7 +95,7 @@ export function subscriptionProductSchema(): JsonLdObject {
       priceCurrency: "GBP",
       lowPrice: lowPrice.toFixed(2),
       highPrice: highPrice.toFixed(2),
-      offerCount: plans.length,
+      offerCount: durationPlans.length,
       availability: "https://schema.org/InStock",
     },
   };

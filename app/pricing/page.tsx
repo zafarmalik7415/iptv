@@ -1,6 +1,6 @@
 import { CtaSection } from "@/components/CtaSection";
 import { JsonLd } from "@/components/JsonLd";
-import { PricingPlans } from "@/components/pricing/PricingPlans";
+import { PlanCards } from "@/components/pricing/PlanCards";
 import { Button, Container, Icon, SectionHeading } from "@/components/ui";
 import { faqs } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
@@ -14,7 +14,7 @@ export const metadata = buildMetadata({
   path: "/pricing",
   title: "IPTV Subscription UK Pricing and Plans",
   description:
-    "UK IPTV subscription pricing. Starter, Standard and Premium plans with GBP prices, " +
+    "UK IPTV subscription pricing. Plans for 1, 3, 6 and 12 months in GBP, " +
     "no contract, instant activation and a 7 day money back guarantee.",
   keywords: [
     "IPTV subscription price UK",
@@ -66,14 +66,18 @@ export default function PricingPage() {
                 <span className="gradient-text">IPTV Subscription</span>
               </>
             }
-            description="Every plan includes the full 20,000+ channel list, the VOD library and a 7 day TV guide with catch up. You choose how many screens and how long."
+            description="Pay once per term. Every plan includes the full 20,000+ channel list, the VOD library and a 7 day TV guide with catch up. You just pick the length."
           />
         </Container>
       </section>
 
       <section className="pb-8">
         <Container>
-          <PricingPlans />
+          <PlanCards />
+          <p className="mx-auto mt-8 max-w-md text-center text-xs text-white/40">
+            Prices in GBP and include VAT where it applies. Tap Buy via WhatsApp
+            and we send the payment details.
+          </p>
         </Container>
       </section>
 
@@ -128,15 +132,16 @@ export default function PricingPage() {
       </section>
 
       <CtaSection
-        eyebrow="Pick a plan"
+        eyebrow="Not sure yet?"
         title={
           <>
-            Start Your{" "}
-            <span className="gradient-text">IPTV Subscription</span> Today
+            See What Is{" "}
+            <span className="gradient-text">Included</span>
           </>
         }
-        description="Choose a plan and your login arrives by email within minutes. Prefer to ask first? We are on WhatsApp."
-        primaryLabel="Choose your plan"
+        description="Browse the full channel line up, or message us on WhatsApp and we will tell you which plan fits your setup."
+        primaryHref="/channels"
+        primaryLabel="Browse the channels"
       />
     </>
   );
