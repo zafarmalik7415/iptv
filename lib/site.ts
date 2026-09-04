@@ -4,9 +4,23 @@
  */
 
 function resolveSiteUrl(): string {
-  const raw = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-  // Normalise: no trailing slash, so `${SITE_URL}${path}` is always clean.
-  return raw.replace(/\/+$/, "");
+  const fallback = "http://localhost:3000";
+  let raw = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+
+  if (!raw) return fallback;
+
+  // Accept a bare domain (e.g. "mysite.com") by adding a scheme, so a missing
+  // "https://" in the Vercel env var can never crash `new URL(SITE_URL)` during
+  // the build.
+  if (!/^https?:\/\//i.test(raw)) raw = `https://${raw}`;
+
+  try {
+    const url = new URL(raw);
+    // Origin only: scheme + host, no trailing slash, no path or query.
+    return `${url.protocol}//${url.host}`;
+  } catch {
+    return fallback;
+  }
 }
 
 export const SITE_URL = resolveSiteUrl();
