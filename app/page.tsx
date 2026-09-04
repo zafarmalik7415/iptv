@@ -47,8 +47,8 @@ export const metadata = buildMetadata({
   title: "IPTV Subscription UK for Live TV, Sport and Films in HD and 4K",
   titleAbsolute: true,
   description:
-    "A UK IPTV subscription served from UK based servers for a steady picture, " +
-    "with 20,000+ live channels and a VOD library of films and series in 4K and Full HD that is updated every week.",
+    "A UK IPTV subscription on UK servers for a steady picture. 20,000+ live " +
+    "channels plus a weekly VOD library of films and series in 4K and Full HD.",
 });
 
 /* ------------------------------------------------------------------ page --- */

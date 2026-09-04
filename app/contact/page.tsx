@@ -9,8 +9,8 @@ export const metadata = buildMetadata({
   path: "/contact",
   title: "Contact and Support",
   description:
-    "Contact our UK support team about an IPTV subscription. Questions before you buy, " +
-    "setup help, billing and channel requests. Live chat 24 hours a day and quick email replies.",
+    "Contact our UK support team about an IPTV subscription. Questions before you " +
+    "buy, setup help, billing and channel requests. Live chat 24 hours a day.",
   keywords: ["IPTV support UK", "contact IPTV provider UK", "UK IPTV subscription help"],
 });
 

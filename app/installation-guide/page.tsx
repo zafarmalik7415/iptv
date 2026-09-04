@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   title: "IPTV Installation Guide UK",
   description:
     "Step by step IPTV setup for the Firestick, Android TV, Samsung and LG Smart TV, " +
-    "iPhone, iPad, Windows, Mac, Formuler and MAG boxes. Pick your device and follow the guide.",
+    "iPhone, iPad, Windows, Mac, Formuler and MAG boxes.",
   keywords: [
     "IPTV installation guide UK",
     "how to set up IPTV UK",

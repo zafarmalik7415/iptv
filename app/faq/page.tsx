@@ -10,8 +10,8 @@ export const metadata = buildMetadata({
   path: "/faq",
   title: "IPTV Subscription UK FAQ",
   description:
-    "How a UK IPTV subscription works. Supported devices, streams at the same time, " +
-    "broadband speed, activation time, the TV guide and catch up, trials and refunds.",
+    "How a UK IPTV subscription works. Devices, streams at once, broadband speed, " +
+    "activation time, the TV guide and catch up, trials and refunds.",
   keywords: [
     "IPTV subscription FAQ",
     "how does IPTV work UK",

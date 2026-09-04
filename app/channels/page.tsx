@@ -10,8 +10,8 @@ export const metadata = buildMetadata({
   path: "/channels",
   title: "Channels and VOD Library",
   description:
-    "See what is in the UK IPTV subscription line up. More than 3,400 sport channels, " +
-    "film and box set channels, news, kids, documentaries and over 8,000 international channels, plus VOD.",
+    "What is in the UK IPTV subscription line up. Over 3,400 sport channels, plus " +
+    "films, news, kids, documentaries, 8,000+ international channels and VOD.",
   keywords: [
     "IPTV channel list UK",
     "IPTV sport channels UK",
