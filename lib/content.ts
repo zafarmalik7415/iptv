@@ -851,6 +851,53 @@ export function formatGbp(value: number): string {
   return `£${value.toFixed(2)}`;
 }
 
+/* ------------------------------------------- duration plans (home pricing) -- */
+
+export interface DurationPlan {
+  id: string;
+  /** Shown as the card heading, e.g. "3 months". */
+  label: string;
+  months: number;
+  /** One off price in GBP for the whole term. */
+  price: number;
+  featured?: boolean;
+  badge?: string;
+}
+
+/**
+ * Simple pay once, per term pricing used on the home page. Buying goes through
+ * WhatsApp, so there is no checkout to wire up.
+ */
+export const durationPlans: DurationPlan[] = [
+  { id: "1-month", label: "1 month", months: 1, price: 20 },
+  { id: "3-months", label: "3 months", months: 3, price: 35 },
+  {
+    id: "6-months",
+    label: "6 months",
+    months: 6,
+    price: 55,
+    featured: true,
+    badge: "Most popular",
+  },
+  { id: "12-months", label: "12 months", months: 12, price: 70 },
+];
+
+/** Feature list every duration plan includes. */
+export const planFeatures = [
+  "20,000+ channels",
+  "4K Ultra HD",
+  "Anti freeze",
+  "All devices",
+  "EPG included",
+  "24/7 support",
+];
+
+/** Prefilled WhatsApp link for a specific plan. */
+export function whatsappPlanLink(label: string, price: number): string {
+  const message = `Hi, I would like the ${label} IPTV subscription for £${price}. Please send the payment details.`;
+  return `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
+}
+
 /* ------------------------------------------------------------------ faqs ---- */
 
 export interface Faq {
