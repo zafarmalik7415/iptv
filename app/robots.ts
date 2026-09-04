@@ -7,7 +7,7 @@ import { SITE_URL } from "@/lib/site";
  *
  * - Allows every well-behaved crawler to index the whole site.
  * - Blocks Next.js internals and API routes from being crawled.
- * - Points crawlers at the sitemap and declares the canonical host.
+ * - Points crawlers at the sitemap.
  */
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -27,6 +27,5 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Applebot", allow: "/" },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
-    host: SITE_URL,
   };
 }
