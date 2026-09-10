@@ -28,6 +28,20 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
+
+  // Force the apex domain: any request that arrives on the www host is 301
+  // redirected to the same path without www, so there is only ever one
+  // indexable URL for each page and it matches the canonical tag.
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.iptvsubscriptionsuk.co.uk" }],
+        destination: "https://iptvsubscriptionsuk.co.uk/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

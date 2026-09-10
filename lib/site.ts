@@ -3,18 +3,24 @@
  * data all stay in sync from a single source of truth.
  */
 
+/**
+ * The live production domain. Canonical URLs, the sitemap, robots.txt and Open
+ * Graph tags all resolve to this on the production deployment, even when
+ * NEXT_PUBLIC_SITE_URL is not configured on the host. No "www" — the www host
+ * is 301 redirected to this apex domain (see next.config.mjs).
+ */
+const PRODUCTION_URL = "https://iptvsubscriptionsuk.co.uk";
+
 function resolveSiteUrl(): string {
   const fallback = "http://localhost:3000";
 
   // In priority order:
-  //  1. NEXT_PUBLIC_SITE_URL  — set this to the real domain in production.
-  //  2. VERCEL_PROJECT_PRODUCTION_URL — the stable *.vercel.app production URL.
-  //  3. VERCEL_URL — the per deployment URL (used for previews).
-  // So canonicals, sitemap and Open Graph tags point at the live host even
-  // before a custom domain and NEXT_PUBLIC_SITE_URL are configured.
+  //  1. NEXT_PUBLIC_SITE_URL — explicit override for staging or a domain change.
+  //  2. PRODUCTION_URL — the real domain, only on the production deployment.
+  //  3. VERCEL_URL — the per deployment URL, so previews stay self referential.
   const candidates = [
     process.env.NEXT_PUBLIC_SITE_URL,
-    process.env.VERCEL_PROJECT_PRODUCTION_URL,
+    process.env.VERCEL_ENV === "production" ? PRODUCTION_URL : undefined,
     process.env.VERCEL_URL,
   ];
 
@@ -28,8 +34,10 @@ function resolveSiteUrl(): string {
 
     try {
       const url = new URL(withScheme);
+      // Always drop a leading "www." so every canonical uses the apex domain.
+      const host = url.host.replace(/^www\./i, "");
       // Origin only: scheme + host, no trailing slash, no path or query.
-      return `${url.protocol}//${url.host}`;
+      return `${url.protocol}//${host}`;
     } catch {
       // Bad value, try the next candidate.
     }
