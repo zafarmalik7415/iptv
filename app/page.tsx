@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CtaSection } from "@/components/CtaSection";
 import { FaqAccordion } from "@/components/faq/FaqAccordion";
 import { PosterCarousel } from "@/components/home/PosterCarousel";
+import { ServerMapMockup } from "@/components/home/ServerMapMockup";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { PlanCards } from "@/components/pricing/PlanCards";
 import {
@@ -129,34 +130,55 @@ export default function HomePage() {
       {/* 2 ────────────────────────────────────────────── why viewers trust */}
       <section className="border-t border-white/10 py-20 md:py-28">
         <Container>
-          <SectionHeading
-            align="left"
-            eyebrow="UK streaming servers"
-            title={
-              <>
-                Closer Servers Mean A{" "}
-                <span className="gradient-text">Steadier Picture</span>
-              </>
-            }
-          />
-          <div className="mt-6 max-w-3xl space-y-4 text-sm leading-relaxed text-white/60">
-            <p>
-              The biggest single factor in stream quality is how far your data
-              has to travel. A shorter trip means lower latency, so channels open
-              quickly and respond without lag.
-            </p>
-            <p>
-              That is why we host in the UK. Your connection is routed to nearby
-              capacity in London or Manchester, so the stream reaches you in HD
-              and 4K without crossing half the world first.
-            </p>
-            <p className="text-white/45">
-              Tuned for the main UK providers, including BT, Sky, Virgin Media
-              and EE, on broadband and mobile.
-            </p>
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+            <div>
+              <SectionHeading
+                align="left"
+                eyebrow="UK streaming servers"
+                title={
+                  <>
+                    Closer Servers Mean A{" "}
+                    <span className="gradient-text">Steadier Picture</span>
+                  </>
+                }
+              />
+              <div className="mt-6 space-y-4 text-sm leading-relaxed text-white/60">
+                <p>
+                  The biggest single factor in stream quality is how far your
+                  data has to travel. A shorter trip means lower latency, so
+                  channels open quickly and respond without lag.
+                </p>
+                <p>
+                  That is why we host in the UK. Your connection is routed to
+                  nearby capacity in London or Manchester, so the stream reaches
+                  you in HD and 4K without crossing half the world first.
+                </p>
+                <p className="text-white/45">
+                  Tuned for the main UK providers, including BT, Sky, Virgin
+                  Media and EE, on broadband and mobile.
+                </p>
+              </div>
+              <dl className="mt-8 grid max-w-md grid-cols-3 gap-3">
+                {[
+                  { k: "UK routed", v: "London and Manchester" },
+                  { k: "Low latency", v: "Quick channel changes" },
+                  { k: "HD and 4K", v: "Holds on busy nights" },
+                ].map((s) => (
+                  <div key={s.k} className="card p-3">
+                    <dt className="text-xs font-bold text-white/80">{s.k}</dt>
+                    <dd className="mt-1 text-[11px] leading-snug text-white/45">
+                      {s.v}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+            <div className="relative">
+              <ServerMapMockup />
+            </div>
           </div>
 
-          <h3 className="mt-14 text-center text-2xl font-bold text-balance md:text-3xl">
+          <h3 className="mt-20 text-center text-2xl font-bold text-balance md:text-3xl">
             Why UK Viewers Stay With Us
           </h3>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

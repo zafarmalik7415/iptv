@@ -172,9 +172,65 @@ body {
     }
   }
 
+  /* Pulsing signal rings + travelling packets for the UK servers illustration */
+  .signal-ring {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: signal-ring 3.9s ease-out infinite;
+  }
+  .signal-ring-2 {
+    animation-delay: 1.3s;
+  }
+  .signal-ring-3 {
+    animation-delay: 2.6s;
+  }
+
+  @keyframes signal-ring {
+    0% {
+      transform: scale(0.32);
+      opacity: 0;
+    }
+    12% {
+      opacity: 0.85;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+  .packet-dash {
+    stroke-dasharray: 4 150;
+    animation: packet-dash 2.6s linear infinite;
+  }
+  .packet-dash-2 {
+    animation-delay: 0.9s;
+  }
+  .packet-dash-3 {
+    animation-delay: 1.7s;
+  }
+
+  @keyframes packet-dash {
+    from {
+      stroke-dashoffset: 154;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
-    .panel-swap {
+    .panel-swap,
+    .packet-dash,
+    .signal-ring {
       animation: none;
+    }
+    .signal-ring {
+      opacity: 0.22;
+    }
+    .signal-ring-2,
+    .signal-ring-3 {
+      display: none;
     }
   }
 }
