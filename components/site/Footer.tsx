@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import { contact, navLinks } from "@/lib/content";
 import { Icon } from "@/components/ui";
 import { siteConfig } from "@/lib/site";
 
@@ -50,13 +49,6 @@ export function Footer() {
               A fast, tidy IPTV subscription for live TV, sport and films on
               every device in the UK, with instant activation and real support.
             </p>
-            <a
-              href={`mailto:${contact.email}`}
-              className="mt-4 inline-flex items-center gap-2 text-sm text-white/70 hover:text-white"
-            >
-              <Icon name="mail" className="h-4 w-4" />
-              {contact.email}
-            </a>
           </div>
 
           {columns.map((col) => (
@@ -90,17 +82,6 @@ export function Footer() {
             country.
           </p>
         </div>
-
-        <nav className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-xs text-white/40">
-          <Link href="/" className="hover:text-white/70">
-            Home
-          </Link>
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="hover:text-white/70">
-              {link.label}
-            </Link>
-          ))}
-        </nav>
       </div>
     </footer>
   );
