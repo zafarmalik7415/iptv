@@ -29,19 +29,9 @@ const nextConfig = {
   compress: true,
   reactStrictMode: true,
 
-  // Force the apex domain: any request that arrives on the www host is 301
-  // redirected to the same path without www, so there is only ever one
-  // indexable URL for each page and it matches the canonical tag.
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.iptvsubscriptionsuk.co.uk" }],
-        destination: "https://iptvsubscriptionsuk.co.uk/:path*",
-        permanent: true,
-      },
-    ];
-  },
+  // NOTE: the www -> apex redirect is handled at the Vercel edge (Settings ->
+  // Domains -> set iptvsubscriptionsuk.co.uk as the primary domain). Do not add
+  // a redirect here as well or the two bounce against each other in a loop.
 };
 
 export default nextConfig;
