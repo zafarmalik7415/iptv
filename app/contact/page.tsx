@@ -1,6 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { Button, Container, Icon, SectionHeading, type IconName } from "@/components/ui";
-import { contact, whatsappLink } from "@/lib/content";
+import { contact, highlightStats, qualityBadges, whatsappLink } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
@@ -86,7 +86,7 @@ export default function ContactPage() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="card mt-8 flex flex-col items-start gap-5 border-[#25D366]/25 bg-[#25D366]/[0.06] p-6 transition-colors hover:border-[#25D366]/50 sm:flex-row sm:items-center sm:justify-between"
+            className="card mt-8 block border-[#25D366]/25 bg-[#25D366]/[0.06] p-6 transition-colors hover:border-[#25D366]/50 sm:p-8"
           >
             <div className="flex items-center gap-4">
               <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#25D366]/15 text-[#25D366]">
@@ -108,7 +108,28 @@ export default function ContactPage() {
                 </p>
               </div>
             </div>
-            <span className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-[#08130d] sm:w-auto">
+
+            <ul className="mt-6 flex flex-wrap gap-2.5">
+              {qualityBadges.map((b) => (
+                <li
+                  key={b}
+                  className="rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-xs text-white/65"
+                >
+                  {b}
+                </li>
+              ))}
+            </ul>
+
+            <dl className="mt-5 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/5 sm:grid-cols-3">
+              {highlightStats.map((s) => (
+                <div key={s.label} className="bg-[#0d0c10]/80 p-4 text-center">
+                  <dt className="text-lg font-bold gradient-text">{s.value}</dt>
+                  <dd className="mt-0.5 text-[11px] text-white/55">{s.label}</dd>
+                </div>
+              ))}
+            </dl>
+
+            <span className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-[#08130d]">
               Message Us on WhatsApp
               <Icon name="arrow-right" className="h-4 w-4" />
             </span>
