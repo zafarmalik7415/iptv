@@ -86,10 +86,10 @@ export default function ContactPage() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="card mt-8 block border-[#25D366]/25 bg-[#25D366]/[0.06] p-6 transition-colors hover:border-[#25D366]/50 sm:p-8"
+            className="card group relative mt-8 block overflow-hidden border-brand-2/40 bg-gradient-to-b from-brand-2/[0.14] to-brand-3/[0.05] p-6 shadow-xl shadow-brand-3/10 transition-colors hover:border-brand-2/60 sm:p-8"
           >
             <div className="flex items-center gap-4">
-              <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#25D366]/15 text-[#25D366]">
+              <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-1 to-brand-3 text-white">
                 <svg viewBox="0 0 32 32" className="h-6 w-6" fill="currentColor" aria-hidden="true">
                   <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.745 3.047 9.377L1.05 31.3l6.13-1.96A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0Zm9.31 22.594c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.726-6.724-7.962-7.034-.226-.31-1.9-2.53-1.9-4.826 0-2.296 1.166-3.424 1.636-3.904.386-.394.98-.574 1.55-.574.184 0 .35.01.5.016.44.02.66.046.95.74.362.87 1.242 3.166 1.348 3.388.108.222.216.522.066.832-.14.32-.264.454-.486.708-.222.254-.432.45-.654.722-.204.238-.434.492-.178.932.256.43 1.138 1.876 2.446 3.04 1.688 1.502 3.078 1.976 3.562 2.178.36.15.79.114 1.052-.168.334-.36.744-.958 1.162-1.548.296-.42.67-.472 1.062-.324.4.14 2.53 1.192 2.964 1.408.434.216.722.32.83.5.106.184.106 1.048-.28 2.14Z" />
                 </svg>
@@ -97,8 +97,8 @@ export default function ContactPage() {
               <div>
                 <p className="flex items-center gap-2 text-base font-semibold text-white">
                   WhatsApp
-                  <span className="inline-flex items-center gap-1 rounded-full bg-[#25D366]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#25D366]">
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#25D366]" />
+                  <span className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-brand-1 to-brand-3 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#1a0f07]">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#1a0f07]/70" />
                     Fastest
                   </span>
                 </p>
@@ -129,7 +129,7 @@ export default function ContactPage() {
               ))}
             </dl>
 
-            <span className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-[#08130d]">
+            <span className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-1 to-brand-3 px-5 py-3 text-sm font-semibold text-[#1a0f07] transition-transform group-hover:-translate-y-0.5">
               Message Us on WhatsApp
               <Icon name="arrow-right" className="h-4 w-4" />
             </span>
