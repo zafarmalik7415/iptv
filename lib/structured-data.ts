@@ -131,6 +131,30 @@ export function howToSchema(guide: {
   };
 }
 
+/**
+ * Generic schema.org "HowTo" for any numbered process shown on a page, such
+ * as the buying steps on the home page. Kept separate from howToSchema (the
+ * per device install guide builder above) since the required fields differ.
+ */
+export function processHowToSchema(params: {
+  name: string;
+  description: string;
+  steps: { title: string; description: string }[];
+}): JsonLdObject {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: params.name,
+    description: params.description,
+    step: params.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.title,
+      text: step.description,
+    })),
+  };
+}
+
 /** schema.org "BreadcrumbList" from an ordered list of [label, path] pairs. */
 export function breadcrumbSchema(
   trail: { name: string; path: string }[],

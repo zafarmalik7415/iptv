@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { CtaSection } from "@/components/CtaSection";
 import { FaqAccordion } from "@/components/faq/FaqAccordion";
+import { JsonLd } from "@/components/JsonLd";
 import { PosterCarousel } from "@/components/home/PosterCarousel";
 import { ServerMapMockup } from "@/components/home/ServerMapMockup";
 import { OptimizedImage } from "@/components/OptimizedImage";
@@ -26,6 +27,7 @@ import {
   trustFeatures,
 } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
+import { processHowToSchema, subscriptionProductSchema } from "@/lib/structured-data";
 
 const DEVICE_ICON: Record<string, IconName> = {
   "iOS & Apple TV": "phone",
@@ -56,6 +58,18 @@ export const metadata = buildMetadata({
 export default function HomePage() {
   return (
     <>
+      <JsonLd
+        data={[
+          subscriptionProductSchema(),
+          processHowToSchema({
+            name: "How to start your IPTV subscription",
+            description:
+              "The four steps to go from choosing a plan to watching live TV.",
+            steps,
+          }),
+        ]}
+      />
+
       {/* 1 ─────────────────────────────────────────────────────────── hero */}
       <section className="glow-top relative overflow-hidden pt-16 pb-16 md:pt-24 md:pb-24">
         <div className="grid-mask absolute inset-0" aria-hidden="true" />
