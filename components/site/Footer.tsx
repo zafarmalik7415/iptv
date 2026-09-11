@@ -7,24 +7,24 @@ const columns: { title: string; links: { href: string; label: string }[] }[] = [
   {
     title: "Product",
     links: [
-      { href: "/pricing", label: "Pricing & plans" },
-      { href: "/channels", label: "Channel line up" },
-      { href: "/installation-guide", label: "Installation guide" },
+      { href: "/pricing", label: "Pricing & Plans" },
+      { href: "/channels", label: "Channel Line Up" },
+      { href: "/installation-guide", label: "Installation Guide" },
       { href: "/faq", label: "Setup & FAQ" },
     ],
   },
   {
     title: "Company",
     links: [
-      { href: "/contact", label: "Contact us" },
-      { href: "/faq", label: "How it works" },
+      { href: "/contact", label: "Contact Us" },
+      { href: "/faq", label: "How It Works" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { href: "/faq", label: "Refund policy" },
-      { href: "/contact", label: "Report an issue" },
+      { href: "/faq", label: "Refund Policy" },
+      { href: "/contact", label: "Report An Issue" },
     ],
   },
 ];
