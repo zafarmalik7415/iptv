@@ -908,6 +908,7 @@ export const whatsappLink = `https://wa.me/${contact.whatsappNumber}?text=${enco
 )}`;
 
 export const navLinks: { href: string; label: string }[] = [
+  { href: "/", label: "Home" },
   { href: "/pricing", label: "Pricing" },
   { href: "/channels", label: "Channels" },
   { href: "/installation-guide", label: "Setup Guide" },
