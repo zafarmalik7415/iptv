@@ -7,10 +7,11 @@ import { breadcrumbSchema } from "@/lib/structured-data";
 
 export const metadata = buildMetadata({
   path: "/contact",
-  title: "Contact and Support",
+  title: "Talk to Our UK IPTV Subscription Team",
+  titleAbsolute: true,
   description:
-    "Contact our UK support team about an IPTV subscription. Questions before you " +
-    "buy, setup help, billing and channel requests. Live chat 24 hours a day.",
+    "Get in touch about your IPTV subscription. Ask about plans, setup or " +
+    "billing on WhatsApp, live chat or email. Our UK team usually replies in minutes.",
   keywords: ["IPTV support UK", "contact IPTV provider UK", "UK IPTV subscription help"],
 });
 

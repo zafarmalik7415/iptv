@@ -8,10 +8,11 @@ import { breadcrumbSchema, faqPageSchema } from "@/lib/structured-data";
 
 export const metadata = buildMetadata({
   path: "/faq",
-  title: "IPTV Subscription UK FAQ",
+  title: "IPTV Subscription UK FAQ: Setup, Pricing and Devices",
+  titleAbsolute: true,
   description:
-    "How a UK IPTV subscription works. Devices, streams at once, broadband speed, " +
-    "activation time, the TV guide and catch up, trials and refunds.",
+    "Answers about your IPTV subscription. Devices, streams per plan, broadband " +
+    "speed, activation time, the TV guide and refunds, all in one place.",
   keywords: [
     "IPTV subscription FAQ",
     "how does IPTV work UK",

@@ -44,11 +44,11 @@ const DEVICE_ICON: Record<string, IconName> = {
 
 export const metadata = buildMetadata({
   path: "/",
-  title: "IPTV Subscription UK for Live TV, Sport and Films in HD and 4K",
+  title: "IPTV Subscription UK: 20,000+ Channels, Sport and Films",
   titleAbsolute: true,
   description:
-    "A UK IPTV subscription on UK servers for a steady picture. 20,000+ live " +
-    "channels plus a weekly VOD library of films and series in 4K and Full HD.",
+    "An IPTV subscription built for the UK, from £20. Over 20,000 live channels, " +
+    "4K and HD streams, a 7 day TV guide, and fast WhatsApp support.",
 });
 
 /* ------------------------------------------------------------------ page --- */

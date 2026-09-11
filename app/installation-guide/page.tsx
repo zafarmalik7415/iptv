@@ -7,10 +7,11 @@ import { breadcrumbSchema, howToSchema } from "@/lib/structured-data";
 
 export const metadata = buildMetadata({
   path: "/installation-guide",
-  title: "IPTV Installation Guide UK",
+  title: "IPTV Installation Guide UK: Firestick to Smart TV",
+  titleAbsolute: true,
   description:
-    "Step by step IPTV setup for the Firestick, Android TV, Samsung and LG Smart TV, " +
-    "iPhone, iPad, Windows, Mac, Formuler and MAG boxes.",
+    "Set up your IPTV subscription in minutes. Step by step guides for Firestick, " +
+    "Android, Samsung, LG, iPhone, iPad, Windows, Mac and MAG boxes.",
   keywords: [
     "IPTV installation guide UK",
     "how to set up IPTV UK",

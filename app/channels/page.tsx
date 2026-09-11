@@ -8,10 +8,11 @@ import { breadcrumbSchema } from "@/lib/structured-data";
 
 export const metadata = buildMetadata({
   path: "/channels",
-  title: "Channels and VOD Library",
+  title: "IPTV Channels UK: Sport, Films and 20,000+ More",
+  titleAbsolute: true,
   description:
-    "What is in the UK IPTV subscription line up. Over 3,400 sport channels, plus " +
-    "films, news, kids, documentaries, 8,000+ international channels and VOD.",
+    "Browse the UK IPTV subscription channel list. Live sport, entertainment, " +
+    "kids and news channels, plus a large film and series library on demand.",
   keywords: [
     "IPTV channel list UK",
     "IPTV sport channels UK",

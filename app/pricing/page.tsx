@@ -12,10 +12,11 @@ import {
 
 export const metadata = buildMetadata({
   path: "/pricing",
-  title: "IPTV Subscription UK Pricing and Plans",
+  title: "IPTV Subscription UK Pricing: Plans From £20",
+  titleAbsolute: true,
   description:
-    "UK IPTV subscription pricing. Plans for 1, 3, 6 and 12 months in GBP, " +
-    "no contract, instant activation and a 7 day money back guarantee.",
+    "Simple IPTV subscription pricing in GBP. Choose 1, 3, 6 or 12 months, no " +
+    "contract, instant activation and a 7 day money back guarantee.",
   keywords: [
     "IPTV subscription price UK",
     "IPTV subscription plans UK",

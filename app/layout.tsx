@@ -32,7 +32,7 @@ const geistSans = localFont({
 export const metadata: Metadata = {
   ...buildMetadata({ path: "/" }),
   title: {
-    default: `${siteConfig.name}: IPTV Subscription UK for Live TV, Sport and Films`,
+    default: "IPTV Subscription UK: 20,000+ Channels, Sport and Films",
     template: `%s | ${siteConfig.name}`,
   },
   applicationName: siteConfig.name,
