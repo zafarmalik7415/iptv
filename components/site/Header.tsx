@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 import { navLinks } from "@/lib/content";
 import { Button, Icon } from "@/components/ui";
+import { Logo } from "@/components/site/Logo";
 
 export function Header() {
   const pathname = usePathname();
@@ -34,9 +35,7 @@ export function Header() {
     >
       <div className="container-x flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-2 font-semibold">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-1 to-brand-3 text-white">
-            <Icon name="play" className="h-4 w-4" />
-          </span>
+          <Logo className="h-8 w-9" />
           <span className="text-[15px] tracking-tight">
             IPTV<span className="text-white/50">Website</span>
           </span>

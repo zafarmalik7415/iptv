@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Icon } from "@/components/ui";
+import { Logo } from "@/components/site/Logo";
 import { siteConfig } from "@/lib/site";
 
 const columns: { title: string; links: { href: string; label: string }[] }[] = [
@@ -38,9 +38,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Link href="/" className="flex items-center gap-2 font-semibold">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-1 to-brand-3 text-white">
-                <Icon name="play" className="h-4 w-4" />
-              </span>
+              <Logo className="h-8 w-9" />
               <span className="text-[15px] tracking-tight">
                 IPTV<span className="text-white/50">Website</span>
               </span>
