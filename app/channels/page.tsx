@@ -2,7 +2,6 @@ import { CtaSection } from "@/components/CtaSection";
 import { JsonLd } from "@/components/JsonLd";
 import { ChannelExplorer } from "@/components/channels/ChannelExplorer";
 import { Container, SectionHeading } from "@/components/ui";
-import { channelCategories } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
@@ -22,8 +21,6 @@ export const metadata = buildMetadata({
 });
 
 export default function ChannelsPage() {
-  const totalCount = channelCategories.length;
-
   return (
     <>
       <JsonLd
@@ -43,7 +40,7 @@ export default function ChannelsPage() {
                 <span className="gradient-text">IPTV Subscription</span>
               </>
             }
-            description="Filter by category or search for a channel by name. This page shows popular examples. The live line up is much larger and changes all the time."
+            description="Filter by category to see what is inside. This page shows popular examples. The live line up is much larger and changes all the time."
           />
         </Container>
       </section>
@@ -56,12 +53,7 @@ export default function ChannelsPage() {
 
       <section className="border-t border-white/10 bg-white/[0.02] py-16">
         <Container>
-          <div className="grid gap-4 sm:grid-cols-3">
-            <Stat label="Channel Categories" value={`${totalCount}`} />
-            <Stat label="Sport Channels" value="3,400+" />
-            <Stat label="TV Guide" value="7 Days" />
-          </div>
-          <div className="mt-10 flex flex-col items-center gap-3 text-center">
+          <div className="flex flex-col items-center gap-3 text-center">
             <p className="text-sm text-white/55">
               Cannot find a channel? Ask us before you buy and we will confirm
               whether it is in the line up.
@@ -82,14 +74,5 @@ export default function ChannelsPage() {
         primaryLabel="See plans and pricing"
       />
     </>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="card p-5 text-center">
-      <p className="text-2xl font-bold gradient-text">{value}</p>
-      <p className="mt-1 text-xs text-white/55">{label}</p>
-    </div>
   );
 }
