@@ -39,8 +39,8 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <Logo className="h-8 w-9" />
-              <span className="text-[15px] tracking-tight">
-                IPTV<span className="text-white/50">Website</span>
+              <span className="text-[17px] tracking-tight">
+                IPTV <span className="gradient-text font-extrabold">UK</span>
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/55">

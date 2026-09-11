@@ -893,7 +893,7 @@ export const contact = {
   email: "support@example.com",
   chatHours: "Live chat, 24 hours a day",
   responseTime: "First reply usually within 15 minutes",
-  telegram: "@iptvwebsite_support",
+  telegram: "@iptvuk_support",
   /** WhatsApp shown as it reads to a person. */
   whatsappDisplay: "+44 7362 244111",
   /** Digits only, international format, for wa.me links. */

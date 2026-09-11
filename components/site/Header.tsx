@@ -36,8 +36,8 @@ export function Header() {
       <div className="container-x flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-2 font-semibold">
           <Logo className="h-8 w-9" />
-          <span className="text-[15px] tracking-tight">
-            IPTV<span className="text-white/50">Website</span>
+          <span className="text-[17px] tracking-tight">
+            IPTV <span className="gradient-text font-extrabold">UK</span>
           </span>
         </Link>
 

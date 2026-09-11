@@ -18,7 +18,7 @@ export const DEFAULT_KEYWORDS = [
 export interface SeoParams {
   /**
    * Page title WITHOUT the brand suffix. The root layout applies the
-   * "%s | IPTV Website" template automatically. Omit for the home page.
+   * "%s | IPTV UK" template automatically. Omit for the home page.
    */
   title?: string;
   /** Meta description for this page. Falls back to the site description. */
@@ -42,7 +42,7 @@ export interface SeoParams {
   noIndex?: boolean;
   /**
    * When true, use the title exactly as given and skip the brand template.
-   * Used by the home page so its title isn't "Home | IPTV Website".
+   * Used by the home page so its title isn't "Home | IPTV UK".
    */
   titleAbsolute?: boolean;
 }
@@ -100,7 +100,7 @@ export function buildMetadata(params: SeoParams = {}): Metadata {
     : undefined; // undefined -> root layout's `title.default` is used
 
   // Text used inside OG/Twitter where a concrete string is required.
-  const socialTitle = title ?? `${siteConfig.name}: IPTV Subscription UK`;
+  const socialTitle = title ?? "IPTV Subscription UK: 20,000+ Channels, Sport and Films";
 
   const mergedKeywords = Array.from(
     new Set<string>([...DEFAULT_KEYWORDS, ...keywords]),

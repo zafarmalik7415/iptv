@@ -50,9 +50,9 @@ export const SITE_URL = resolveSiteUrl();
 
 export const siteConfig = {
   /** Brand / legal business name. */
-  name: "IPTV Website",
-  /** Short label used in the title template, e.g. "Pricing | IPTV Website". */
-  shortName: "IPTV Website",
+  name: "IPTV UK",
+  /** Short label used in the title template, e.g. "Pricing | IPTV UK". */
+  shortName: "IPTV UK",
   url: SITE_URL,
   /**
    * Default site wide description. Written for people first. The keywords
@@ -65,7 +65,7 @@ export const siteConfig = {
   locale: "en_GB",
   language: "en-GB",
   /** Twitter/X handle (with @). Update when you have a real account. */
-  twitterHandle: "@iptvwebsite",
+  twitterHandle: "@iptvuk",
   /** Default social share image, relative to the site root. Replace with a real asset. */
   ogImage: "/opengraph-image.png",
   ogImageWidth: 1200,
@@ -77,12 +77,12 @@ export const siteConfig = {
   googleSiteVerification: "google-site-verification-placeholder-token",
   /** Organisation contact + social profiles, consumed by the JSON-LD builder. */
   organization: {
-    legalName: "IPTV Website Ltd.",
+    legalName: "IPTV UK Ltd.",
     email: "support@example.com",
     /** Public profile URLs. Empty entries are filtered out of the JSON-LD. */
     sameAs: [
       // "https://www.facebook.com/yourpage",
-      // "https://twitter.com/iptvwebsite",
+      // "https://twitter.com/iptvuk",
       // "https://www.youtube.com/@yourchannel",
     ] as string[],
   },
