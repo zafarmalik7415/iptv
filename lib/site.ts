@@ -74,7 +74,7 @@ export const siteConfig = {
    * Google Search Console verification token. Replace the placeholder with the
    * value from Search Console (HTML tag method), or move it to an env var.
    */
-  googleSiteVerification: "google-site-verification-placeholder-token",
+  googleSiteVerification: "QnulCV0tZBeePuBUGf6AfXcRsOz_aL4Bv_UArF43q24",
   /** Organisation contact + social profiles, consumed by the JSON-LD builder. */
   organization: {
     legalName: "IPTV UK Ltd.",
