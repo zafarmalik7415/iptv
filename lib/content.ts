@@ -67,22 +67,22 @@ export const steps: { title: string; description: string }[] = [
   {
     title: "Choose Your Plan",
     description:
-      "Pick the IPTV subscription that fits your household. Longer terms work out cheaper per month.",
+      "Pick the IPTV subscription length that suits you. Longer terms work out cheaper per month.",
   },
   {
-    title: "Fill In The Short Form",
+    title: "Message Us On WhatsApp",
     description:
-      "Add your details at checkout. It takes about a minute and there is no long sign up.",
+      "Tap Buy via WhatsApp on your plan, or message us directly. We confirm the details with you there.",
   },
   {
-    title: "Get Your Secure Payment Link",
+    title: "Get Your Payment Details",
     description:
-      "We email you a private payment link so you can pay safely by card.",
+      "We send you the payment details on WhatsApp and confirm your order.",
   },
   {
     title: "Pay And Start Watching",
     description:
-      "Your login and setup steps arrive by email within a few minutes of payment.",
+      "Your login arrives within a few minutes of payment. Install the app and you are ready to watch.",
   },
 ];
 
@@ -819,6 +819,26 @@ export const faqs: Faq[] = [
       "An IPTV subscription is a login that streams live TV channels and on demand films and series over your broadband, instead of through a satellite dish or a cable box. You enter the login once into a compatible app and the channel list and TV guide load on their own.",
   },
   {
+    question: "How do I buy an IPTV subscription?",
+    answer:
+      "Pick a plan on our pricing page, then message us on WhatsApp to confirm it. We send payment details and your login within minutes of payment. Install a player app on your device, enter the login, and you are ready to watch.",
+  },
+  {
+    question: "How much does an IPTV subscription cost in the UK?",
+    answer:
+      "Our plans run from £20 for 1 month up to £70 for 12 months, in GBP. Every plan includes the same full channel list and VOD library, so you are only choosing how long you want it for, not what you get.",
+  },
+  {
+    question: "Are IPTV subscriptions worth it?",
+    answer:
+      "For most UK households, yes. You get far more channels and films than a typical TV bundle, for less money and with no long contract. It is only worth it if your broadband is stable, so check our setup guide and try it before you commit to a longer plan.",
+  },
+  {
+    question: "What is the best IPTV subscription?",
+    answer:
+      "The best one for you is stable on your broadband, carries the channels you actually watch, and has a real person to message when something goes wrong. Look for UK based servers, honest pricing and a fair trial rather than the longest channel count. That is what we have built ours around.",
+  },
+  {
     question: "Does it work on UK broadband?",
     answer:
       "Yes. It runs fine on the usual UK providers, including BT, Sky, Virgin Media, EE, TalkTalk, Vodafone and Plusnet. As a rough guide you want about 15 Mbps per stream for Full HD and 25 Mbps or more for 4K. A wired connection or 5 GHz WiFi gives the steadiest picture during live sport.",
@@ -829,9 +849,14 @@ export const faqs: Faq[] = [
       "Any device that runs a standard IPTV player. That covers the Amazon Firestick and Fire TV, Android phones, tablets and boxes, Apple TV, iPhone and iPad, Samsung and LG Smart TVs, Android TV, Windows and Mac computers, and MAG boxes. Common apps are IPTV Smarters Pro and TiviMate. Our setup guide has step by step instructions for each one.",
   },
   {
+    question: "Which package is best for streaming TV?",
+    answer:
+      "Start short if you are not sure, a 1 or 3 month plan is enough to test the service on your setup. Once you know it works for you, the 6 or 12 month plan costs less per month. Every plan streams the same channels in the same quality, so the only real choice is length.",
+  },
+  {
     question: "How many devices can watch at once?",
     answer:
-      "It depends on your plan. Starter allows 1 stream at a time, Standard allows 2 and Premium allows 4. You can install the subscription on as many devices as you like. The limit is only on how many play at the same time.",
+      "You can install your login on as many devices as you like. If you need more than one of them playing at the same time, message us on WhatsApp before you buy and we will confirm what your plan supports.",
   },
   {
     question: "How soon can I watch after paying?",
@@ -881,7 +906,7 @@ export const testimonials: {
   },
   {
     quote:
-      "We have four TVs at home and the Premium plan handles all of them at the same time. I had a setup question and chat came back within a few minutes.",
+      "We have four TVs at home and support helped us get every one of them set up. I had a setup question and chat came back within a few minutes.",
     name: "Mark V.",
     detail: "Bristol",
   },
