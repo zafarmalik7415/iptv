@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   titleAbsolute: true,
   description:
     "Get in touch about your IPTV subscription. Ask about plans, setup or " +
-    "billing on WhatsApp, live chat or email. Our UK team usually replies in minutes.",
+    "billing on WhatsApp or live chat. Our UK team usually replies in minutes.",
   keywords: ["IPTV support UK", "contact IPTV provider UK", "UK IPTV subscription help"],
 });
 
@@ -20,19 +20,6 @@ const otherChannels = [
     title: "Live Chat",
     value: contact.chatHours,
     detail: contact.responseTime,
-  },
-  {
-    icon: "mail" as const,
-    title: "Email",
-    value: contact.email,
-    detail: "Best for billing and account changes",
-    href: `mailto:${contact.email}`,
-  },
-  {
-    icon: "sparkles" as const,
-    title: "Telegram",
-    value: contact.telegram,
-    detail: "Quick questions before you buy",
   },
 ];
 
@@ -128,35 +115,21 @@ export default function ContactPage() {
                 </div>
               ))}
             </dl>
-
-            <span className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-1 to-brand-3 px-5 py-3 text-sm font-semibold text-[#1a0f07] transition-transform group-hover:-translate-y-0.5">
-              Message Us on WhatsApp
-              <Icon name="arrow-right" className="h-4 w-4" />
-            </span>
           </a>
 
-          <div className="mt-4 grid gap-4 sm:grid-cols-3">
-            {otherChannels.map((c) => {
-              const inner = (
-                <div className="card flex h-full gap-4 p-5">
-                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br from-brand-1/20 to-brand-3/20 text-white">
-                    <Icon name={c.icon} />
-                  </span>
-                  <div>
-                    <h3 className="text-sm font-semibold">{c.title}</h3>
-                    <p className="mt-0.5 text-sm text-white/80">{c.value}</p>
-                    <p className="mt-1 text-xs text-white/50">{c.detail}</p>
-                  </div>
+          <div className="mt-4">
+            {otherChannels.map((c) => (
+              <div key={c.title} className="card flex gap-4 p-5">
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br from-brand-1/20 to-brand-3/20 text-white">
+                  <Icon name={c.icon} />
+                </span>
+                <div>
+                  <h3 className="text-sm font-semibold">{c.title}</h3>
+                  <p className="mt-0.5 text-sm text-white/80">{c.value}</p>
+                  <p className="mt-1 text-xs text-white/50">{c.detail}</p>
                 </div>
-              );
-              return c.href ? (
-                <a key={c.title} href={c.href} className="block h-full">
-                  {inner}
-                </a>
-              ) : (
-                <div key={c.title}>{inner}</div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </Container>
       </section>
