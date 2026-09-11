@@ -40,7 +40,7 @@ export default function ChannelsPage() {
                 <span className="gradient-text">IPTV Subscription</span>
               </>
             }
-            description="Filter by category to see what is inside. This page shows popular examples. The live line up is much larger and changes all the time."
+            description="Filter by category to see what is inside your IPTV subscription. This page shows popular examples. The full streaming line up is much larger and changes every week."
           />
         </Container>
       </section>

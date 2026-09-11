@@ -25,7 +25,7 @@ const setupBasics = [
   {
     icon: "mail" as const,
     title: "Your Activation Email",
-    text: "After checkout we email your login. That is an Xtream Codes username, password and server URL, plus an M3U link. Keep it to hand.",
+    text: "After you pay, we email your login. That is an Xtream Codes username, password and server URL, plus an M3U link. Keep it to hand.",
   },
   {
     icon: "download" as const,

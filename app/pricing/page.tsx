@@ -63,11 +63,12 @@ export default function PricingPage() {
             eyebrow="Pricing"
             title={
               <>
-                Simple Plans For Your{" "}
-                <span className="gradient-text">IPTV Subscription</span>
+                Buy An{" "}
+                <span className="gradient-text">IPTV Subscription</span> That
+                Fits Your Budget
               </>
             }
-            description="Pay once per term. Every plan includes the full 20,000+ channel list, the VOD library and a 7 day TV guide with catch up. You just pick the length."
+            description="Every IPTV subscription is a one off payment per term, with no contract behind it. You get the full 20,000+ channel list, the VOD library and a 7 day TV guide with catch up on every plan, so the only real choice is length."
           />
         </Container>
       </section>

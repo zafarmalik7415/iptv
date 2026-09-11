@@ -86,7 +86,7 @@ export function subscriptionProductSchema(): JsonLdObject {
     "@type": "Product",
     name: "IPTV Subscription UK",
     description:
-      "A UK IPTV subscription with 20,000+ live channels and a large VOD library in HD and 4K, " +
+      "Buy a UK IPTV subscription with 20,000+ live channels and a large VOD library in HD and 4K, " +
       "a 7 day TV guide with catch up, and support for every major device.",
     brand: { "@type": "Brand", name: siteConfig.name },
     url: absoluteUrl("/pricing"),

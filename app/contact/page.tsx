@@ -166,7 +166,7 @@ export default function ContactPage() {
               <p className="mt-2 text-sm leading-relaxed text-white/60">
                 This covers plan advice, activation, app setup and billing.
                 Want a refund inside the 7 day window? Email us from the
-                address you used at checkout and we will sort it.
+                address you paid with and we will sort it.
               </p>
             </div>
             <div className="card p-6">

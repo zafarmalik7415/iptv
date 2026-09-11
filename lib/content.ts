@@ -801,7 +801,7 @@ export const planFeatures = [
 
 /** Prefilled WhatsApp link for a specific plan. */
 export function whatsappPlanLink(label: string, price: number): string {
-  const message = `Hi, I would like the ${label} IPTV subscription for £${price}. Please send the payment details.`;
+  const message = `Hi, I would like to buy the ${label} IPTV subscription for £${price}. Please send the payment details.`;
   return `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 

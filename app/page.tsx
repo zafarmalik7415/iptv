@@ -223,8 +223,8 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             eyebrow="Plans and pricing"
-            title="Pricing"
-            description="Pay once per term. No contract and no hidden fees. Every plan includes all 20,000+ channels, every device and 24/7 support."
+            title="Buy Your IPTV Subscription"
+            description="Pay once per term with no contract and no hidden fees. Every IPTV subscription includes all 20,000+ channels, every device and 24/7 support, so the only choice left is how long you want it for."
           />
 
           <div className="mt-14">
@@ -564,10 +564,10 @@ export default function HomePage() {
             }
           />
           <p className="mt-6 max-w-3xl text-sm leading-relaxed text-white/60">
-            Many providers compete on bigger numbers and bigger promises, like
-            30,000 channels and claims that never quite hold up. We look at it
-            differently. A good IPTV subscription is judged by how it runs when
-            you sit down to watch.
+            Many IPTV subscriptions compete on bigger numbers and bigger
+            promises, like 30,000 channels and claims that never quite hold up.
+            We look at it differently. A good IPTV subscription is judged by
+            how it runs when you sit down to watch.
           </p>
 
           <div className="mt-12 grid gap-4 md:grid-cols-2">
