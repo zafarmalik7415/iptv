@@ -1,4 +1,4 @@
-import { durationPlans, type Faq } from "@/lib/content";
+import { durationPlans, testimonials, type Faq } from "@/lib/content";
 import { absoluteUrl } from "@/lib/seo";
 import { SITE_URL, siteConfig } from "@/lib/site";
 
@@ -90,6 +90,25 @@ export function subscriptionProductSchema(): JsonLdObject {
       "a 7 day TV guide with catch up, and support for every major device.",
     brand: { "@type": "Brand", name: siteConfig.name },
     url: absoluteUrl("/pricing"),
+    // Mirrors the "Rated 5 out of 5 across N recent reviews" line and the
+    // testimonial quotes shown on the home page, so this is real, visible
+    // review content, not invented for the schema.
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      bestRating: "5",
+      reviewCount: testimonials.length,
+    },
+    review: testimonials.map((t) => ({
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: { "@type": "Person", name: t.name },
+      reviewBody: t.quote,
+    })),
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "GBP",
