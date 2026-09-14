@@ -831,7 +831,7 @@ export const faqs: Faq[] = [
   {
     question: "Are IPTV subscriptions worth it?",
     answer:
-      "For most UK households, yes. You get far more channels and films than a typical TV bundle, for less money and with no long contract. It is only worth it if your broadband is stable, so check our setup guide and try it before you commit to a longer plan.",
+      "For most UK households, yes. You get far more channels and films than a typical TV bundle, for less money and with no long contract. It is only worth it if your broadband is stable, so check our setup guide and try the free trial before you commit to a longer plan.",
   },
   {
     question: "What is the best IPTV subscription?",
@@ -866,7 +866,7 @@ export const faqs: Faq[] = [
   {
     question: "Is there a trial or a refund?",
     answer:
-      "New customers can ask for a short paid trial before taking a longer plan. Every subscription is also covered by a 7 day money back guarantee if the service will not work on your setup and our team cannot fix it with you.",
+      "Yes. New customers can ask for a short free trial before choosing a plan, so you can check it works on your setup first. Every paid subscription is also covered by a 7 day money back guarantee if the service will not work for you and our team cannot fix it with you.",
   },
   {
     question: "Do I get a TV guide and catch up?",
@@ -930,6 +930,11 @@ export const contact = {
 /** Ready to use wa.me link with the prefilled message. */
 export const whatsappLink = `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(
   contact.whatsappMessage,
+)}`;
+
+/** wa.me link for the header's "Get Free Trial" button. */
+export const whatsappTrialLink = `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(
+  "Hi, I would like the free trial for the IPTV subscription. Please send me the details.",
 )}`;
 
 export const navLinks: { href: string; label: string }[] = [

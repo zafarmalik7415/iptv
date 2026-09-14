@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { navLinks } from "@/lib/content";
+import { navLinks, whatsappTrialLink } from "@/lib/content";
 import { Button, Icon } from "@/components/ui";
 import { Logo } from "@/components/site/Logo";
 
@@ -61,8 +61,8 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="/pricing" className="px-4 py-2">
-            Get started
+          <Button href={whatsappTrialLink} className="px-4 py-2">
+            Get Free Trial
           </Button>
         </div>
 
@@ -89,8 +89,8 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button href="/pricing" className="mt-2">
-              Get started
+            <Button href={whatsappTrialLink} className="mt-2">
+              Get Free Trial
             </Button>
           </div>
         </div>
